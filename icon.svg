@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="12" fill="#0b5fff"/>
+  <!-- a simple 3D cube -->
+  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round">
+    <path d="M32 12 L50 22 L50 42 L32 52 L14 42 L14 22 Z"/>
+    <path d="M32 12 L32 32 M32 32 L50 22 M32 32 L14 22"/>
+  </g>
+  <!-- little chat dot to show the AI -->
+  <circle cx="46" cy="46" r="9" fill="#ffd000" stroke="#0b5fff" stroke-width="2"/>
+</svg>

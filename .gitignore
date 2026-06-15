@@ -1,0 +1,8 @@
+# Never commit secrets or local junk
+.venv/
+__pycache__/
+*.pyc
+.env
+*.log
+run_local.bat
+keys.env

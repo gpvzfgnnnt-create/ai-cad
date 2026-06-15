@@ -1,0 +1,20 @@
+# Render.com "blueprint" — tells Render how to host this app for free.
+# After connecting this repo, Render reads this file automatically.
+services:
+  - type: web
+    name: onshape-panel
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      # These are marked sync:false so you type the secret VALUES into the
+      # Render dashboard — they never get saved into the code/repo.
+      - key: ONSHAPE_ACCESS_KEY
+        sync: false
+      - key: ONSHAPE_SECRET_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: APP_TOKEN
+        sync: false
